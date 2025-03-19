@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts & Registration</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Topics Covered</h2>
+    <ol type="I">
+        <li>Introduction to HTML</li>
+        <li>CSS Basics</li>
+        <li>JavaScript Fundamentals</li>
+        <li>Responsive Design</li>
+        <li>Backend Integration</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h2>Sample Image</h2>
+    <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg" alt="People working on laptops" width="600">
+
+    <!-- Table with 5 Contacts -->
+    <h2>Contact List</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>James Ouma</td>
+            <td>Westlands, Nairobi</td>
+            <td>+254712345678</td>
+            <td>james.ouma@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Sarah Kamau</td>
+            <td>Kilimani, Nairobi</td>
+            <td>+254711223344</td>
+            <td>sarah.kamau@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Brian Mwangi</td>
+            <td>Ruiru, Kiambu</td>
+            <td>+254700998877</td>
+            <td>brian.mwangi@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Linda Achieng</td>
+            <td>Lang’ata, Nairobi</td>
+            <td>+254725554433</td>
+            <td>linda.achieng@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Kevin Otieno</td>
+            <td>Ngong Road, Nairobi</td>
+            <td>+254738112233</td>
+            <td>kevin.otieno@gmail.com</td>
+        </tr>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Register Here</h2>
+    <form action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter a strong password" required minlength="6">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select Country</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Uganda">Uganda</option>
+            <option value="Tanzania">Tanzania</option>
+            <option value="Rwanda">Rwanda</option>
+            <option value="Ethiopia">Ethiopia</option>
+        </select>
+
+        <label>Interests:</label><br>
+        <input type="checkbox" id="coding" name="interests" value="coding">
+        <label for="coding">Coding</label>
+        <input type="checkbox" id="design" name="interests" value="design">
+        <label for="design">Design</label>
+        <input type="checkbox" id="research" name="interests" value="research">
+        <label for="research">Research</label><br><br>
+
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
